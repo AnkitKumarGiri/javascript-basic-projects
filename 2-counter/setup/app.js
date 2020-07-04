@@ -13,10 +13,10 @@ btns.forEach(function (btn){
         //currentTarget returns the element whose even listeners triggered a specific event
         const styles = e.currentTarget.classList;
         if(styles.contains('decrease')){
-            count--;
+            count-=1e17;
         }
         else  if(styles.contains('increase')){
-            count++;    
+            count+=1e17;    
         }
         else{
             count = 0;
